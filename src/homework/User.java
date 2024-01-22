@@ -1,6 +1,6 @@
 package homework;
 
-public class User{
+public class User implements Persisterable, ReportPrintable, Userable{
     private final String name;
 
     public User(String name){
@@ -12,8 +12,7 @@ public class User{
     }
 
     public void save(){
-        Persister persister = new Persister(this);
-        persister.save();
+        System.out.println("Save user: " + this.getName());
     }
 
     public void report(){

@@ -1,6 +1,6 @@
 package homework;
 
-public class Persister{
+public class Persister implements Persisterable{
     private final User user;
 
     public Persister(User user){
